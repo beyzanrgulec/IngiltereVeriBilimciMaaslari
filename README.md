@@ -24,6 +24,9 @@ Bu proje, Kaggle'dan alınan **İngiltere Veri Bilimci Maaşları** veri setini 
   - NumPy
   - Matplotlib
   - Seaborn
+  - Sklearn
+  - K-Means
+  
 - **Veri Kaynağı**: Kaggle
 
 ---
