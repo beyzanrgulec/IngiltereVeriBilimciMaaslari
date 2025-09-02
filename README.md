@@ -1,49 +1,52 @@
-# İngiltere Veri Bilimci Maaşları
+# İngiltere Veri Bilimci Maaş Analizi (EDA + K-Means)
 
-Bu proje, Kaggle'dan alınan **İngiltere Veri Bilimci Maaşları** veri setini kullanarak Keşifçi Veri Analizi (EDA) yapmayı amaçlar. Projede veri görselleştirme ve analiz yöntemleriyle, İngiltere'deki veri bilimci maaş trendleri incelenmiştir.
+Bu proje, Kaggle'dan alınan **İngiltere Veri Bilimci Maaşları** veri setini kullanarak veri analizi ve kümeleme çalışması yapmayı amaçlamaktadır.
+
+## Amaç
+- İngiltere'deki veri bilimci maaşlarını etkileyen faktörleri anlamak
+- Şirketler ve şehirler bazında maaş trendlerini incelemek
+- K-Means ile maaş ve şirket puanı bazlı kümeler oluşturmak
+
+## Veri Seti
+- Kaynak: Kaggle
+- Sütunlar: 
+  - Company: Şirket adı
+  - Company Score: Glassdoor puanı
+  - Job Title: İş pozisyonu
+  - Date: İlan tarihi
+  - Salary: Maaş
+  - Skills: Pozisyon için gerekli beceriler
+  - Estimation Type: Maaş tahmini kaynağı
+  - Remote: Çalışma tipi
+  - City, Country: Konum bilgisi
+
+## Kullanılan Teknolojiler
+- Python (pandas, numpy, matplotlib, seaborn, scikit-learn)
+- Veri ön işleme: Eksik değerleri doldurma, Label Encoding
+- Görselleştirme: Barplot, Swarmplot, Scatterplot
+- Makine Öğrenmesi: K-Means Kümeleme
+
+## Adımlar
+1. Veri seti yükleme ve incelenmesi
+2. Eksik değerlerin doldurulması (mod ile)
+3. Kategorik verilerin sayısal formata dönüştürülmesi (LabelEncoder)
+4. Şehir ve şirket bazlı maaş analizleri
+5. K-Means kümeleme ile maaş ve şirket puanı kümelerinin oluşturulması
+6. Kümeleme sonuçlarının görselleştirilmesi ve özetlenmesi
+
+## Bulgu Örnekleri
+- En yüksek maaş veren şehir: London
+- En düşük maaş veren şehir: Manchester
+- Kümeleme sonuçları:
+  - Cluster 0 → düşük maaş, düşük puanlı şirketler
+  - Cluster 1 → orta maaş, orta puanlı şirketler
+  - Cluster 2 → yüksek maaş, yüksek puanlı şirketler
+
+## Görseller
+- Şehir Bazlı Ortalama Maaş
+- En Yüksek / En Düşük Maaş Veren Şirketler
+- K-Means Kümeleme Sonuçları
 
 ---
 
-## Proje Hakkında
-
-- **Amaç**: İngiltere'de veri bilimcilerin maaşlarını etkileyen faktörleri anlamak ve maaş trendlerini analiz etmek.
-- **Kapsam**:
-  - Maaş dağılımlarını analiz etmek
-  - Şirketlere göre maaş farklılıklarını incelemek
-  - Konuma göre maaş trendlerini görselleştirmek
-  - En çok ve en az maaş veren şirketleri belirlemek
-  - K-Means Kümeleme
-
----
-
-## Kullanılan Araçlar ve Teknolojiler
-
-- **Programlama Dili**: Python
-- **Kütüphaneler**:
-  - Pandas
-  - NumPy
-  - Matplotlib
-  - Seaborn
-  - Sklearn
-  - K-Means
-  
-- **Veri Kaynağı**: Kaggle
-
----
-
-## Veri Seti Bilgisi
-
-**Veri Seti Adı**: İngiltere Veri Bilimci Maaşları  
-**Kaynak**: [Kaggle](https://www.kaggle.com/datasets/emreksz/data-scientist-job-roles-in-uk))  
-**Sütunlar**:
-- Şirket: İşe alan şirketin adı.
-- Şirket Puanı: Şirketin Glassdoor'daki ortalama puanı.
-- İş pozisyonunun adı.
-- Konum: Şehir ve eyalet dahil olmak üzere işin yeri.
-- Tarih: İşin yayınlandığı veya güncellendiği tarih.
-- Maaş: Pozisyon için tahmini maaş aralığı.
-- Beceriler: Pozisyon için gerekli beceriler
-
----
-
-
+> Bu proje, veri analizi ve temel makine öğrenmesi becerilerini sergilemek amacıyla hazırlanmıştır.
